@@ -1,0 +1,572 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español (México) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Bienvenido"
+FONT 9, "Corbel", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",IDOK,209,104,50,14
+    PUSHBUTTON      "Cancelar",Salir_Bot,21,147,50,14
+    CONTROL         "",Image,"Static",SS_BITMAP | SS_CENTERIMAGE | WS_BORDER,26,49,119,64
+    EDITTEXT        ID_eNomUser,197,60,74,14,ES_AUTOHSCROLL
+    EDITTEXT        ID_ePassUser,198,85,74,14,ES_AUTOHSCROLL
+    LTEXT           "Inicio de sesión",IDC_STATIC,188,30,50,8
+    LTEXT           "Usuario",IDC_STATIC,158,63,25,8
+    LTEXT           "Contraseña",IDC_STATIC,156,89,38,8
+    PUSHBUTTON      "Registrate",ID_RegistrarNewUser,239,145,50,14
+    LTEXT           "¿No tienes cuenta? ¡Registrate!",IDC_STATIC,133,148,101,8
+END
+
+ID_Register DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registrar administrador"
+FONT 9, "Corbel", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Registrar",IDC_AceptarRegistro,179,148,50,14
+    PUSHBUTTON      "Atrás",IDc_BackRegister,243,148,50,14
+    EDITTEXT        IDC_Edit_NameAd,31,54,95,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Edit_PasswordAd,31,89,95,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Edit_TiendaAd,31,124,95,14,ES_AUTOHSCROLL
+    LTEXT           "Nombre",IDC_NameAd,33,41,26,8
+    LTEXT           "Contraseña",IDC_PasswordAd,32,76,38,8
+    LTEXT           "Tienda",IDC_commerce,31,114,22,8
+    LTEXT           "Agrega tus detalles",IDC_BienvenidaAdmin,28,19,64,9
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 309, 177
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Menu"
+FONT 8, "Corbel", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Salir",ID_Exit,234,145,50,14
+    PUSHBUTTON      "Alta Admin",IDC_BUTTON1,15,31,50,14
+    PUSHBUTTON      "Baja Admin",IDC_BUTTON2,73,31,50,14
+    PUSHBUTTON      "Act Admin",IDC_BUTTON3,134,31,50,14
+    PUSHBUTTON      "Lista Admin",IDC_BUTTON4,195,31,50,14
+    PUSHBUTTON      "Alta cliente",IDC_BUTTON5,17,70,50,14
+    PUSHBUTTON      "Baja cliente",IDC_BUTTON6,74,70,50,14
+    PUSHBUTTON      "Act cliente",IDC_BUTTON7,136,70,50,14
+    PUSHBUTTON      "Client List",IDC_BUTTON8,196,70,50,14
+    PUSHBUTTON      "Baja Promo",IDC_BUTTON9,73,105,50,14
+    PUSHBUTTON      "Alta Promo",IDC_BUTTON10,15,105,50,14
+    LTEXT           "Funciones para administradores",IDC_OpAdm,20,15,98,8
+    LTEXT           "Funciones para clientes",IDC_STATIC,17,52,72,8
+    LTEXT           "Promociones",IDC_STATIC,16,94,41,8
+    PUSHBUTTON      "Act Promo",IDC_BUTTON11,135,105,50,14
+    PUSHBUTTON      "Prom List",IDC_BUTTON12,194,105,50,14
+    LTEXT           "Consumo",IDC_STATIC,20,126,30,8
+    PUSHBUTTON      "Alta consumo",IDC_BUTTON13,16,139,50,14
+    PUSHBUTTON      "Consum List",IDC_BUTTON14,75,139,50,14
+END
+
+ID_AltaAdmin DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Alta administrador"
+FONT 9, "Corbel", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Registrar",ID_RegistrarAdmin,137,108,50,14
+    PUSHBUTTON      "Salir",ID_SalirAltaAd,241,148,50,14
+    LTEXT           "Tienda",IDC_TiendaAdmin,77,41,22,8
+    LTEXT           "Administrador",IDC_NameAdmin,63,65,45,8
+    LTEXT           "Contraseña",IDC_PasswordAdmin,69,88,38,8
+    EDITTEXT        IDC_EDIT1,123,39,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,123,63,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,123,84,92,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG5 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Eliminar administrador"
+FONT 9, "Corbel", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",ID_OkDeleteAdmin,191,88,50,14
+    PUSHBUTTON      "Salir",ID_SalirDeleteAd,25,144,50,14
+    LTEXT           "Nombre del administrador a eliminar:",IDC_Name_Delete_Ad,160,45,122,8
+    EDITTEXT        IDC_DeleteAd,136,59,150,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG6 DIALOGEX 0, 0, 309, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Actualizar administrador"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",ID_Update,57,134,50,14
+    PUSHBUTTON      "Salir",ID_ExitAct,235,148,50,14
+    LTEXT           "Tienda",IDC_STATIC,23,34,22,8
+    LTEXT           "Nombre",IDC_STATIC,24,66,26,8
+    LTEXT           "Contraseña",IDC_STATIC,25,97,38,8
+    EDITTEXT        IDC_EDIT1,23,44,118,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,24,75,118,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,24,106,118,14,ES_AUTOHSCROLL
+    LTEXT           "Agrega los datos a actualizar",IDC_STATIC,25,20,94,8
+END
+
+IDD_DIALOG7 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lista de administradores"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Salir",ID_ExitAdList,227,146,50,14
+END
+
+IDD_DIALOG8 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registrar cliente"
+FONT 9, "Corbel", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Registrar",ID_RegCliente,191,134,50,14
+    PUSHBUTTON      "Salir",ID_ExitRegCliente,19,147,50,14
+    EDITTEXT        IDC_EDIT1,21,76,95,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,21,113,95,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,22,42,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,173,67,86,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,175,102,85,14,ES_AUTOHSCROLL
+    LTEXT           "Nombre",IDC_STATIC,24,31,26,8
+    LTEXT           "Alias",IDC_STATIC,177,55,16,8
+    LTEXT           "Telefono",IDC_STATIC,175,92,29,8
+    LTEXT           "Tienda",IDC_STATIC,22,103,22,8
+    LTEXT           "E-Mail",IDC_STATIC,23,65,20,8
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,169,20,100,15
+    LTEXT           "Agrega tus datos",IDC_STATIC,22,14,56,8
+END
+
+IDD_DIALOG9 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dar de baja a un cliente"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",ID_AceptarDCliente,165,72,50,14
+    PUSHBUTTON      "Salir",ID_ExitD_Cliente,235,145,50,14
+    COMBOBOX        IDC_COMBO1,31,73,105,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Cuentas registradas como cliente",IDC_STATIC,29,52,107,8
+END
+
+IDD_DIALOG10 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Actualizar cliente"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Registrar",ID_ActCliente,191,136,50,15
+    PUSHBUTTON      "Salir",ID_ExitActCliente,19,146,50,15
+    EDITTEXT        IDC_EDIT1,21,82,95,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,21,122,95,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,22,46,93,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,175,63,88,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,175,101,85,15,ES_AUTOHSCROLL
+    LTEXT           "Nombre",IDC_STATIC,24,33,26,9
+    LTEXT           "Alias",IDC_STATIC,177,50,16,9
+    LTEXT           "Telefono",IDC_STATIC,175,90,29,9
+    LTEXT           "Tienda",IDC_STATIC,22,111,22,9
+    LTEXT           "E-Mail",IDC_STATIC,23,70,20,9
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,169,22,100,16
+    LTEXT           "Actualizar datos",IDC_STATIC,23,15,56,9
+END
+
+IDD_DIALOG11 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lista de clientes"
+FONT 8, "Corbel", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Salir",ID_ExitListClient,19,143,50,14
+END
+
+IDD_DIALOG12 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Alta promociones"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Nombre",IDC_STATIC,22,31,26,8
+    LTEXT           "Monto de promocion",IDC_STATIC,22,69,66,8
+    LTEXT           "Porcentaje",IDC_STATIC,24,106,36,8
+    EDITTEXT        IDC_EDIT1,22,42,95,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,21,79,95,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,22,119,94,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,190,56,48,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,165,92,100,15
+    PUSHBUTTON      "Aceptar",ID_RegPromo,194,118,50,14
+    PUSHBUTTON      "Salir",ID_ExitAltaProm,244,145,50,14
+END
+
+IDD_DIALOG13 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dar de baja una promocion"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",ID_BajaProm,67,98,50,14
+    COMBOBOX        IDC_COMBO1,31,75,116,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Salir",ID_ExitBajaPromo,227,144,50,14
+    LTEXT           "Lista promociones",IDC_STATIC,32,61,58,8
+    LTEXT           "Ingrese la promocion a eliminar",IDC_STATIC,31,25,100,8
+END
+
+IDD_DIALOG17 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "Corbel", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Salir",ID_ExitListCon,245,151,50,14
+    LTEXT           "Lista de consumo",IDC_STATIC,21,22,56,8
+END
+
+IDD_DIALOG14 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Actualizar promociones"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Actualizar",ID_ActPromo,187,109,50,14
+    PUSHBUTTON      "Salir",ID_ExitActPromo,20,146,50,14
+    LTEXT           "Nombre",IDC_STATIC,23,31,26,8
+    EDITTEXT        IDC_EDIT1,21,43,90,14,ES_AUTOHSCROLL
+    LTEXT           "Monto de promocion",IDC_STATIC,23,67,66,8
+    EDITTEXT        IDC_EDIT2,22,79,89,14,ES_AUTOHSCROLL
+    LTEXT           "Porcentaje",IDC_STATIC,23,101,36,8
+    EDITTEXT        IDC_EDIT3,22,113,90,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,168,76,100,16
+END
+
+IDD_DIALOG15 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Lista de promociones"
+FONT 8, "Corbel", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",ID_PromoList,234,145,50,14
+END
+
+IDD_DIALOG16 DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "Corbel", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",ID_SiAltaConsum,189,146,50,14
+    PUSHBUTTON      "Salir",ID_ExitConsum,243,146,50,14
+    LTEXT           "Cliente",IDC_STATIC,19,28,23,8
+    LTEXT           "Monto",IDC_STATIC,19,68,21,8
+    EDITTEXT        IDC_EDIT1,18,41,98,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,19,82,97,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATETIMEPICKER1,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,18,111,98,15
+    LTEXT           "Subtotal",IDC_STATIC,169,31,28,8
+    LTEXT           "Descuento",IDC_STATIC,167,66,35,8
+    LTEXT           "Total",IDC_STATIC,167,100,17,8
+    EDITTEXT        IDC_EDIT3,167,42,112,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,167,78,111,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,167,111,112,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    ID_Register, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    ID_AltaAdmin, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_DIALOG7, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG8, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG9, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG10, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG11, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG12, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG13, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG17, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG14, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG15, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_DIALOG16, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_Register AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG3 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_AltaAdmin AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG5 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG6 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG7 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG8 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG9 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG10 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG11 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG12 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG17 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG14 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG15 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG13 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG16 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Guardar"
+    BEGIN
+        MENUITEM "Guardar como...",             ID_GUARDAR_GUARDARCOMO
+    END
+    MENUITEM "Guardar como...",             ID_GUARDARCOMO
+END
+
+#endif    // Español (México) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
